@@ -11,6 +11,7 @@ const Piece = ({ piece: { type, color }, position }) => {
     },
   });
   const pieceImagePath = `assets/${type}_${color}.png`;
+
   return (
     <>
       <DragPreviewImage connect={preview} src={pieceImagePath} />
