@@ -2,10 +2,10 @@
 import React from "react";
 import { useDrag, DragPreviewImage } from "react-dnd";
 
-const Piece = ({ piece: { type, color } }) => {
+const Piece = ({ piece: { type, color }, position }) => {
   const [{ isDragging }, drag, preview] = useDrag({
     type: "piece",
-    id: `${type}_${color}`,
+    item: { id: `${position}_${type}_${color}` },
     collect: (monitor) => {
       return { isDragging: !!monitor.isDragging() };
     },

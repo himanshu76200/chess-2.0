@@ -54,3 +54,22 @@
   max-width: 70%;
   max-height: 70%;
 }
+
+.game-over {
+  text-orientation: upright;
+  writing-mode: vertical-lr;
+  padding: 10px;
+  color: white;
+}
+
+.game-over button {
+  color: white;
+  padding: 5px;
+  margin-top: 20px;
+  cursor: pointer;
+  background: rgb(63, 63, 63);
+  border: 2px solid white;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 30px;
+}
